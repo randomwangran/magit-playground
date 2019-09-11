@@ -1,0 +1,22 @@
+some text.
+
+
+get-xxx $style() {
+    return {}
+}
+
+
+some other test.
+
+
+
+
+replace-
+
+(replace-regexp "get \$style\(\) \{\n    return \{\}\n\}" "")
+
+
+
+get $style() {
+    return {}
+}
