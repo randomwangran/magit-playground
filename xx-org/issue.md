@@ -116,4 +116,34 @@ Version	6.1.7601 Service Pack 1 Build 7601
 cmd.exe
 
 Microsoft Windows [Version 6.1.7601]
+
+
+Shell: MINGW64.exe
+C:\Program Files\Git\mingw64\bin
+```
+
+
+
+I also test the same searching using `grep`
+`grep (GNU grep) 3.0` with the same shell on the same machine.
+
+
+The results are expected in both `c:/Users/user/xx-org` and `c:/user/xx-org`
+
+```
+C:\Users\user>grep -nr :leila: c:/Users/user/xx-org
+c:/Users/user/xx-org/dummy-A:4::leila:
+c:/Users/user/xx-org/dummy-A.org:4::leila:
+c:/Users/user/xx-org/dummy-B:4::leila:
+c:/Users/user/xx-org/dummy-B.org:4::leila:
+c:/Users/user/xx-org/dummy-C:4::leila:
+c:/Users/user/xx-org/dummy-C.org:4::leila:
+
+C:\Users\user>grep -nr :leila: c:/Users/xx-org
+c:/Users/xx-org/dummy-A:4::leila:
+c:/Users/xx-org/dummy-A.org:4::leila:
+c:/Users/xx-org/dummy-B:4::leila:
+c:/Users/xx-org/dummy-B.org:4::leila:
+c:/Users/xx-org/dummy-C:4::leila:
+c:/Users/xx-org/dummy-C.org:4::leila:
 ```
