@@ -24,7 +24,7 @@ If I put `xx-org` somewhere in my file system, for example:
 `e:\xx-org`
 
 
-Then, typing: `rg :leila: e/xx-org`, I can get:
+Then, open a `cmd.exe` and type: `rg :leila: e/xx-org`, I can get:
 
 ```
 E:\xx-org>rg :leila: e:/xx-org
@@ -101,10 +101,19 @@ Ran
 
 Extra info
 ==========
+
+```
 rg --version
+
 ripgrep 11.0.1 (rev 344b423da5)
 -SIMD -AVX (compiled)
 +SIMD +AVX (runtime)
 
 OS Name	Microsoft Windows 7 Ultimate
+
 Version	6.1.7601 Service Pack 1 Build 7601
+
+cmd.exe
+
+Microsoft Windows [Version 6.1.7601]
+```
