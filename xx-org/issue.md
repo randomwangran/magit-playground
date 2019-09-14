@@ -1,8 +1,8 @@
 Dear rg maintainer:
 
-I recently find a strange behavior using rg to search a string with in a folder.
+I recently find a strange behavior using `rg` to search a string with in a folder.
 
-The folder structure is this (or [https://github.com/randomwangran/magit-playground/commit/16e4eb3d03ca9358f1ad1bbd2a30e42f4c4b4dc7](this minimal example):
+The folder structure is this (or [this minimal example](https://github.com/randomwangran/magit-playground/commit/16e4eb3d03ca9358f1ad1bbd2a30e42f4c4b4dc7)):
 
 ```
 xx-org
