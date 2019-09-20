@@ -1,0 +1,20 @@
+some text.
+
+
+
+
+
+some other test.
+
+#SBATCH --time=03-00:00
+
+module purge
+module load openfoam/4.1
+
+fluent3DMeshToFoam *.msh > log.fluent3DMeshToFoam 2>&1
+createPatch  > log.createPatch 2>&1
+rm -rf ./constant/polyMesh &&
+mv -f 0.00027/polyMesh ./constant/ &&
+rm -rf 0.00027 &&
+decomposePar > log.decomposePar 2>&1
+mpirun -np 48 pisoFoam -parallel > log.pisoFoam-pre 2>&1
