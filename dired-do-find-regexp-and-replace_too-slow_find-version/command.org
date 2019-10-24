@@ -1,0 +1,1 @@
+perl -pi -w -e 's{03-00:00}{06-00:00}g;' ./working-dummy*/dummy.pbs
