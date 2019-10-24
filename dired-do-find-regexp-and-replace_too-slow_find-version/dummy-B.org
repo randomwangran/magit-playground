@@ -1,7 +1,7 @@
 some text.
 
 
-;; /This/buffer/is/for/text/that/is/not/saved,/and/for/Lisp/evaluation.xxx
+;; /To/create/a/file,/visit/it/with/<open>/and/enter/text/in/its/buffer.YYY
 ;; To create a file, visit it with <open> and enter text in its buffer.
 
 
